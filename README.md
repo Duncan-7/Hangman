@@ -1,0 +1,1 @@
+Hangman project with save game functionality, completed as part of The Odin Project. 
