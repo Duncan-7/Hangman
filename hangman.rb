@@ -8,7 +8,7 @@ class Answer
 
   def find_answer
   loop
-    x = File.readlines("5desk.txt").sample[0..-3]
+    x = File.readlines("5desk.txt").sample.downcase.gsub(/[^a-z]/, "")
     if 4 < x.length && x.length < 13
       return x.downcase
     end
@@ -152,8 +152,8 @@ game = Game.new(answer)
 # game.check_letter("t")
 # game.update_display
 # p game.test_array
-game.game
-# p answer.answer
-# p game.answer
-# p game.test_array
-# p game.display_array
+# game.game
+p answer.answer
+p game.answer
+p game.test_array
+p game.display_array
